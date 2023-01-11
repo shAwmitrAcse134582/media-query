@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* using float */
+
+        /* .row {
+            background-color: red;
+        }
+
+        .col {
+            float: left;
+            width: 25%;
+            padding: 10px;
+            background-color: blue;
+        }
+
+        @media screen and(max-width:992px) {
+            .col {
+                float: left;
+                width: 50%;
+                background-color: aquamarine;
+            }
+        }
+
+        @media screen and(max-width:600px) {
+            .col {
+
+                width: 100%;
+                background-color: brown;
+            }
+        } */
+        /* using flex */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            width: 25%;
+            padding: 10px;
+        }
+
+        @media screen and (max-width:992px) {
+            .col {
+
+                width: 50%;
+                background-color: aquamarine;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .col {
+
+                width: 100%;
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <h1>python</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, id eveniet qui ipsam aperiam ad
+
+            </p>
+        </div>
+        <div class="col">
+            <h1>HTML</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod maxime quas explicabo facilis fuga?
+            </p>
+        </div>
+        <div class="col">
+            <h1>CSS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptate neque dignissimos, eligendi
+            </p>
+        </div>
+        <div class="col">
+            <h1>javascript</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nostrum exercitationem ab eligendi
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

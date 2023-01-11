@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ea8d639258.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            display: flex;
+            background-color: aqua;
+            justify-content: flex-end;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+            font-weight: 700;
+            font-size: 2em;
+        }
+
+        .menu i {
+            padding: 20px;
+            color: white;
+            font-size: 2em;
+            display: none;
+        }
+
+        .menu a:hover {
+            background-color: antiquewhite;
+        }
+
+        .menu i:hover {
+            background-color: antiquewhite;
+        }
+
+        @media screen and (max-width:600px) {
+            .menu {
+                flex-direction: column;
+                padding: 5px;
+            }
+
+            .menu a {
+                /* background-color: blueviolet; */
+                text-align: center;
+            }
+
+            .menu i {
+                display: block;
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <i class="fa-solid fa-bars"></i>
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+        <a href="#">About Me</a>
+        <a href="#">contact me</a>
+    </div>
+
+</body>
+
+</html>
